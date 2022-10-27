@@ -3,19 +3,32 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="600dp"
     android:fitsSystemWindows="true"
+    android:id="@+id/container"
     tools:context=".MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fitsSystemWindows="true">
+        android:fitsSystemWindows="true"
+        android:background="#CA1414"
+        >
 
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize" />
+            android:layout_height="?attr/actionBarSize"
+            app:title="Hello"
+            app:titleCentered="true"
+            app:titleTextColor="@color/white"
+            app:subtitle="subtitle"
+            app:subtitleCentered="true"
+            app:subtitleTextAppearance="@style/MaterialAlertDialog.Material3.Body.Text"
+            app:subtitleTextColor="@color/white"
+           app:navigationIcon="@drawable/ic_launcher_background"
+            />
 
     </com.google.android.material.appbar.AppBarLayout>
 
